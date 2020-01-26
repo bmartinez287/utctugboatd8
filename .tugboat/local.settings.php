@@ -20,7 +20,7 @@ $databases = [
     'default' =>
     [
       [
-        'database' => $db_name,
+        'database' => 'drupal8',
         'username' => 'drupal8',
         'password' => 'drupal8',
         'host' => 'database',

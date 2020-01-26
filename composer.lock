@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f04a66aadefefb6f90fc3da70a3ef1d",
+    "content-hash": "35f0ba8f8c628d42e28a167d99d87bd2",
     "packages": [
         {
             "name": "acquia/blt",
@@ -114,6 +114,43 @@
                 "testing"
             ],
             "time": "2020-01-16T01:26:24+00:00"
+        },
+        {
+            "name": "acquia/blt-tugboat",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acquia/blt-tugboat.git",
+                "reference": "ca1604b23fb924cfdd60ee140fbd7379750e59e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acquia/blt-tugboat/zipball/ca1604b23fb924cfdd60ee140fbd7379750e59e6",
+                "reference": "ca1604b23fb924cfdd60ee140fbd7379750e59e6",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Acquia\\BltTugboat\\": "./src/"
+                },
+                "classmap": [
+                    "src/Blt/Plugin/EnvironmentDetector/TugboatDetector.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Acquia Engineering",
+                    "homepage": "https://www.acquia.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Tugboat integration for Acquia BLT",
+            "time": "2019-07-19T16:26:26+00:00"
         },
         {
             "name": "acquia/composer-scaffold",
@@ -3840,11 +3877,11 @@
                     }
                 },
                 "patches_applied": {
+                    "3096566 - Copy media library styles from Seven to Claro & 3096241 - Refactor image and file field widgets to improve contrib compatibility and to make their templates and preprocess functions DRY": "https://www.drupal.org/files/issues/2019-12-16/3096566-23-combined-3096241-3.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch",
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2019-11-05/1356276-531-8.8.x-4.patch",
-                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
-                    "3096566 - Copy media library styles from Seven to Claro & 3096241 - Refactor image and file field widgets to improve contrib compatibility and to make their templates and preprocess functions DRY": "https://www.drupal.org/files/issues/2019-12-16/3096566-23-combined-3096241-3.patch"
+                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                 }
             },
             "autoload": {
@@ -15654,6 +15691,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "acquia/blt-tugboat": 20,
         "acquia/composer-scaffold": 20,
         "acquia/lightning": 20,
         "acquia/blt-require-dev": 20

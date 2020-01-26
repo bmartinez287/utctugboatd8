@@ -98,4 +98,4 @@ services:
        # - scp user@example.com:database.sql.gz /tmp/database.sql.gz
         - wget https://drive.google.com/file/d/1lP0DFkKiRV1bUaiK-O_9daplt3WrUOep/view?usp=sharing -P /tmp/database.sql.gz
         - zcat /tmp/database.sql.gz | mysql tugboat
-        - rm /tmp/database.sql.gz
+        #- rm /tmp/database.sql.gz

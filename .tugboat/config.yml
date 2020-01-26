@@ -96,6 +96,7 @@ services:
         # SSH key found in the Tugboat Repository configuration must be
         # copied to the external server in order to use scp.
        # - scp user@example.com:database.sql.gz /tmp/database.sql.gz
-        - wget https://drive.google.com/file/d/1lP0DFkKiRV1bUaiK-O_9daplt3WrUOep/view?usp=sharing /tmp/database.sql.gz
+        - wget https://drive.google.com/file/d/1lP0DFkKiRV1bUaiK-O_9daplt3WrUOep/view?usp=sharing 
+        - mv database.sql.gz /tmp/database.sql.gz
         - zcat /tmp/database.sql.gz | mysql tugboat
         - rm /tmp/database.sql.gz

@@ -1,11 +1,20 @@
 <?php
-$databases['default']['default'] = array (
-  'database' => 'tugboat',
-  'username' => 'tugboat',
-  'password' => 'tugboat',
-  'prefix' => '',
-  'host' => 'mysql',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+/**
+ * Database configuration.
+ */
+$databases = [
+  'default' =>
+  [
+    'default' =>
+    [
+      'database' => $db_name,
+      'username' => '${drupal.db.username}',
+      'password' => '${drupal.db.password}',
+      'host' => '${drupal.db.host}',
+      'port' => '${drupal.db.port}',
+      'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ],
+  ],
+];

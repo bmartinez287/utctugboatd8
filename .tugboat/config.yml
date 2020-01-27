@@ -44,7 +44,7 @@ services:
         - cp "${TUGBOAT_ROOT}/.tugboat/local.settings.php" "${DOCROOT}/sites/default/settings/"
 
         # Generate a unique hash_salt to secure the site
-        - echo "\$settings['hash_salt'] = '$(openssl rand -hex 32)';" >> "${DOCROOT}/sites/default/settings.local.php"
+        - echo "\$settings['hash_salt'] = '$(openssl rand -hex 32)';" >> "${DOCROOT}/sites/default/local.settings.php"
 
         # Install/update packages managed by composer, including drush
         - composer install --no-ansi
